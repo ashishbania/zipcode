@@ -103,6 +103,23 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.2</version>
+                <configuration>
+                    <excludes>
+                        <!--                        <exclude>com/example/zipcode/ArrayOftContinent.class</exclude>-->
+                        <exclude>com/example/zipcode/*Response*</exclude>
+                        <exclude>com/example/zipcode/*ListOf*</exclude>
+                        <exclude>com/example/zipcode/*ISO*</exclude>
+                        <exclude>com/example/zipcode/T*</exclude>
+                        <exclude>com/example/zipcode/ArrayOft*</exclude>
+                        <!--                        <exclude>com/example/zipcode/Country*</exclude>-->
+                        <exclude>com/example/zipcode/*Countr*</exclude>
+                        <exclude>com/example/zipcode/Object*</exclude>
+                        <exclude>com/example/zipcode/Currency*</exclude>
+                        <exclude>com/example/zipcode/LanguageName*</exclude>
+                        <exclude>com/example/zipcode/CapitalC*</exclude>
+                        <!--                        <exclude>com/example/zipcode/ZipCodeApplica*</exclude>-->
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -118,8 +135,8 @@
                         </goals>
                     </execution>
                 </executions>
+
             </plugin>
         </plugins>
     </build>
-
 </project>
