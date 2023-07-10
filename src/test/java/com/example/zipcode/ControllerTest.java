@@ -27,4 +27,5 @@ class ControllerTest {
     controller.getZipcode(123);
     verify(service, times(1)).getZipcodeData(123);
   }
+
 }
